@@ -29,11 +29,11 @@ jobs:
       # Required - kibot config file
         config: JLC.kibot.yaml
       # optional - prefix to output defined in config
-        dir: Core/outputs
+        dir: CORE/outputs
       # optional - schematic file
-        schema: 'Core/MIDI_DIN.sch'
+        schema: 'CORE/MIDI_DIN.sch'
       # optional - PCB design file
-        board: 'Core/MIDI_DIN.kicad_pcb'
+        board: 'CORE/MIDI_DIN.kicad_pcb'
       # optional - verbose output info
         verbose: 0
     - uses: nerdyscout/kicad-exports@v2.3.1
@@ -41,11 +41,11 @@ jobs:
       # Required - kibot config file
         config: JLC.kibot.yaml
       # optional - prefix to output defined in config
-        dir: Front/outputs
+        dir: FRONT/outputs
       # optional - schematic file
-        schema: 'Front/MIDI_DIN_front.sch'
+        schema: 'FRONT/MIDI_DIN_front.sch'
       # optional - PCB design file
-        board: 'Front/MIDIBUS_DIN_front.kicad_pcb'
+        board: 'FRONT/MIDIBUS_DIN_front.kicad_pcb'
       # optional - verbose output info
         verbose: 0
     - name: upload results
@@ -53,5 +53,5 @@ jobs:
       with:
         name: ProdFiles
         path: |
-          Core/outputs/
-          Front/outputs/
+          CORE/outputs/
+          FRONT/outputs/
