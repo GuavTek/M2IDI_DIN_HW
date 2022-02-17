@@ -45,7 +45,7 @@ jobs:
       # optional - schematic file
         schema: 'FRONT/MIDI_DIN_front.sch'
       # optional - PCB design file
-        board: 'FRONT/MIDIBUS_DIN_front.kicad_pcb'
+        board: 'FRONT/MIDI_DIN_front.kicad_pcb'
       # optional - verbose output info
         verbose: 0
     - name: upload results
