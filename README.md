@@ -9,7 +9,7 @@ The code for this module can be found on
 
 
 <p>
-The current issues with the PCB can be found on  
+Renders of schematics and PCB, as well as the current issues can be found on  
 <a href="https://cadlab.io/project/25231/main/files">
 			  CADLab
 		  </a>
