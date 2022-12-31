@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "MIDIBUS - DIN"
 Date ""
-Rev ""
+Rev "2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -791,7 +791,7 @@ U 1 1 60B48849
 P 1350 4300
 F 0 "J7" H 1430 4292 50  0000 L CNN
 F 1 "Conn_01x06" H 1430 4201 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 1350 4300 50  0001 C CNN
+F 2 "Custom_FP:TSM103-DH" H 1350 4300 50  0001 C CNN
 F 3 "~" H 1350 4300 50  0001 C CNN
 	1    1350 4300
 	1    0    0    -1  
