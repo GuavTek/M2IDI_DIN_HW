@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "MIDIBUS - DIN"
-Date ""
+Title "M2IDI - DIN"
+Date "2023-03-17"
 Rev "2.1"
 Comp ""
 Comment1 ""
