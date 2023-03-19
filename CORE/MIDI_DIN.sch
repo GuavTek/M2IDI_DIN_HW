@@ -172,8 +172,6 @@ Wire Wire Line
 	8050 1600 8150 1600
 Wire Wire Line
 	8650 1900 8650 2000
-Wire Wire Line
-	8350 2750 8300 2750
 $Comp
 L power:GND #PWR0107
 U 1 1 5F6BBC5F
@@ -189,20 +187,7 @@ Text GLabel 7650 1600 0    50   Output ~ 0
 DIN_IN
 Wire Wire Line
 	7650 1600 7750 1600
-$Comp
-L Device:R R7
-U 1 1 5F6BC9DC
-P 8150 2750
-F 0 "R7" V 7943 2750 50  0000 C CNN
-F 1 "10k" V 8034 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 2750 50  0001 C CNN
-F 3 "~" H 8150 2750 50  0001 C CNN
-	1    8150 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8000 2750 7950 2750
-Text GLabel 7950 2750 0    50   Input ~ 0
+Text GLabel 8250 2750 0    50   Input ~ 0
 DIN_OUT
 NoConn ~ 10250 1300
 NoConn ~ 10250 1900
@@ -530,16 +515,10 @@ F 3 "" H 7650 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 6900 4750 7000
-Wire Wire Line
 	3950 7400 4350 7400
 Wire Wire Line
 	4350 7400 4350 7450
 Connection ~ 3950 7400
-Connection ~ 4050 7000
-Connection ~ 4750 7000
-Wire Wire Line
-	4750 7000 4750 7100
 Wire Wire Line
 	3950 7200 3950 7300
 $Comp
@@ -1287,8 +1266,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 5950 8150 5950
 Wire Wire Line
-	4050 7000 4750 7000
-Wire Wire Line
 	3850 7300 3950 7300
 Connection ~ 3950 7300
 Wire Wire Line
@@ -1427,7 +1404,7 @@ Wire Wire Line
 Wire Notes Line
 	7000 6450 7000 6500
 Wire Notes Line
-	2750 6450 7000 6450
+	5300 6450 7000 6450
 Wire Notes Line
 	5300 500  5300 6450
 Wire Notes Line
@@ -1756,17 +1733,6 @@ Wire Wire Line
 Wire Wire Line
 	1200 2300 1200 2400
 Connection ~ 1200 2400
-$Comp
-L Transistor_BJT:MMBT3906 Q1
-U 1 1 63C394F5
-P 8550 2750
-F 0 "Q1" H 8741 2704 50  0000 L CNN
-F 1 "MMBT3906" H 8741 2795 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8750 2675 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 8550 2750 50  0001 L CNN
-	1    8550 2750
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	8650 2950 8650 3000
 $Comp
@@ -1897,4 +1863,53 @@ $EndComp
 Wire Wire Line
 	10750 3650 10750 3850
 Connection ~ 10750 3650
+$Comp
+L Transistor_FET:BSS84 Q2
+U 1 1 64186328
+P 8550 2750
+F 0 "Q2" H 8754 2704 50  0000 L CNN
+F 1 "BSS84" H 8754 2795 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8750 2675 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 8550 2750 50  0001 L CNN
+	1    8550 2750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8250 2750 8350 2750
+$Comp
+L Transistor_FET:BSS84 Q1
+U 1 1 641B2AB8
+P 4350 6900
+F 0 "Q1" V 4599 6900 50  0000 C CNN
+F 1 "BSS84" V 4690 6900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4550 6825 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 4350 6900 50  0001 L CNN
+	1    4350 6900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4750 6900 4750 7000
+Wire Wire Line
+	4050 7000 4150 7000
+Connection ~ 4050 7000
+Wire Wire Line
+	4550 7000 4750 7000
+Connection ~ 4750 7000
+Wire Wire Line
+	4750 7000 4750 7100
+Wire Notes Line
+	5300 6250 2750 6250
+$Comp
+L power:VBUS #PWR0142
+U 1 1 6425FC74
+P 4350 6650
+F 0 "#PWR0142" H 4350 6500 50  0001 C CNN
+F 1 "VBUS" H 4365 6823 50  0000 C CNN
+F 2 "" H 4350 6650 50  0001 C CNN
+F 3 "" H 4350 6650 50  0001 C CNN
+	1    4350 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6650 4350 6700
 $EndSCHEMATC
