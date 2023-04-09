@@ -8,12 +8,12 @@ on:
   push:
     branches: [ main ]
     paths:
-    - '**.sch'
+    - '**.kicad_sch'
     - '**.kicad_pcb'
   pull_request:
     branches: [ main ]
     paths:
-    - '**.sch'
+    - '**.kicad_sch'
     - '**.kicad_pcb'
 
   # Allows you to run this workflow manually from the Actions tab
@@ -31,7 +31,7 @@ jobs:
       # optional - prefix to output defined in config
         dir: CORE/outputs
       # optional - schematic file
-        schema: 'CORE/MIDI_DIN.sch'
+        schema: 'CORE/MIDI_DIN.kicad_sch'
       # optional - PCB design file
         board: 'CORE/MIDI_DIN.kicad_pcb'
       # optional - verbose output info
@@ -43,7 +43,7 @@ jobs:
       # optional - prefix to output defined in config
         dir: FRONT/outputs
       # optional - schematic file
-        schema: 'FRONT/MIDI_DIN_front.sch'
+        schema: 'FRONT/MIDI_DIN_front.kicad_sch'
       # optional - PCB design file
         board: 'FRONT/MIDI_DIN_front.kicad_pcb'
       # optional - verbose output info
