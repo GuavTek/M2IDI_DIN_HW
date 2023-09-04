@@ -1,3 +1,4 @@
+This eurorack module is a gateway between MIDI 1.0 over a 5-pin DIN cable, and MIDI 2.0 over the internal bus.
 View this project on [CADLAB.io](https://cadlab.io/project/25234) to see renders of schematics and PCBs, as well as current issues. 
 
 <h2> A part of the M2IDI prototypes </h2>
