@@ -3784,6 +3784,12 @@
     (uuid ff83e00e-b347-49dd-b506-b4e3eca6aff4)
   )
 
+  (text "WARNING!\nCould not get the bootloader running on this MCU.\nconsider using ATSAMD21G17 if you want to use the \nSAM-BA bootloader. It should be pin compatible"
+    (at 76.2 145.415 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e3527089-1f96-4f52-a37b-26788396029a)
+  )
+
   (global_label "SPI_MISO" (shape input) (at 114.3 57.15 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 11d0c889-7137-4634-938b-938c8ffe344b)
